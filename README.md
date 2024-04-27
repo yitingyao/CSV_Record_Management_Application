@@ -8,10 +8,10 @@ This is a user-friendly Python application designed for the management of CSV re
 Navigate through the application's functionalities with ease using the interactive command-line interface.
 
 ### Persistent Storage Operations
-Create, Read, Update, and Delete capabilities for managing Yellowtail fish record entries.
+Provides Create, Read, Update, and Delete (CRUD) capabilities for managing Yellowtail fish record entries efficiently.
 
 ### CSV File Integration
-Loading and saving of records from and to CSV files for persistent data management.
+Loading and saving of csv records for persistent data management, ensuring data integrity and ease of access.
 
 ### Record Viewing Options
 Can choose between a simplified view or a detailed view of records.
