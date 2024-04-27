@@ -20,7 +20,7 @@ Can choose between a simplified view or a detailed view of records.
 Includes a search feature to filter records based on specific criteria such as year and month.
 
 ### Error Handling
-Comprehensive error handling to manage file accessibility issues and input validation, ensuring robust application performance.
+Comprehensive error handling to manage file accessibility issues and input validation.
 
 ### Data Structure Utilization
 In-memory data structure to facilitate access and manipulation of the CSV records.
