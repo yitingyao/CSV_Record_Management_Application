@@ -49,20 +49,20 @@ class YellowtailBusinessLogic:
         """
         try:
             if os.path.exists(self.updated_csv_file_path) and os.path.getsize(self.updated_csv_file_path) > 0:
-                # checks whether the file specified by the path exists and contains more than zero bytes (not empty)
+                # Checks whether the file specified by the path exists and contains more than zero bytes (not empty)
                 self.yellowtail_records_list = self.yellowtailfile_IO.read_updated_yellowtail_records()
             else:
                 self.yellowtail_records_list = self.yellowtailfile_IO.read_original_yellowtail_records()
                 # is an attribute of the instance that will hold the yellowtail fish records in memory. After loading
                 # is performed, other parts of the program can then use self.yellowtail_records_list to access the
-                # data and perform various operations like displaying records, updating records, or saving records.
+                # Data and perform various operations like displaying records, updating records, or saving records.
 
             # If both calls return None, initialize the records list as empty, otherwise it will raise TypeError
             if self.yellowtail_records_list is None:
                 self.yellowtail_records_list = []
         except FileNotFoundError:
             print("Error: The specified dataset file could not be found.")
-            self.yellowtail_records_list = []  # Ensure the list is initialized
+            self.yellowtail_records_list = []  # Ensures the list is initialized
 
     def get_all_yellowtail_records(self):
         """
@@ -114,14 +114,13 @@ class YellowtailBusinessLogic:
         :param yellowtail_record_id: the YellowtailRecord ID in specified by user input.
         """
         self.yellowtail_records_list.pop(yellowtail_record_id - 1)
-        # pop is to remove in python
 
     def search_records(self):
         """
         This function searches existing records by month or year. It prompts the user for a year and a month,
         then checks for their existence in the DataFrame loaded from the updated CSV file.
         """
-        df = pd.read_csv(self.updated_csv_file_path)  # Now correctly referencing the class variable
+        df = pd.read_csv(self.updated_csv_file_path)
         year = input("Please enter the year to search for: ").strip()
         month = input("Please enter the month to search for: ").strip()
 

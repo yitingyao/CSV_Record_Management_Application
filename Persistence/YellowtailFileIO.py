@@ -5,11 +5,10 @@ from Persistence.YellowtailRecord import YellowtailRecord
 
 class YellowtailFileIO:
     """
-    Reads records from the original CSV dataset and creates YellowtailRecord objects.
-    Returns:
-        List[YellowtailRecord]: A list of YellowtailRecord objects.
-    Raises:
-        FileNotFoundError: If the original dataset file is not found.
+    This class Handles file input/output operations for the Yellowtail Flounder records management application.
+    This class is responsible for reading records from CSV files and writing records to CSV files,
+    creating a bridge between the file system and the in-memory data structures.
+    Written by: Yiting Yao.
     """
 
     original_file_name = "../NAFO-4T-Yellowtail-Flounder-otoliths.csv"
