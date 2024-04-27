@@ -30,7 +30,7 @@ In-memory data structure to facilitate access and manipulation of the CSV record
 - Python 3.0+
 - Pandas library
 
-## Acknowledgments
+## Data Sources
 
 The dataset used in the project is provided by Fisheries and Oceans Canada. This dataset is part of the public domain and available under the Open Government License - Canada. The dataset can be accessed at the following link: [Otolith Collection of Yellowtail Flounder in the southern Gulf of St. Lawrence](https://open.canada.ca/data/en/dataset/98913402-688c-1615-9895-ec96b214be5a).
 
