@@ -7,7 +7,7 @@ This is a user-friendly Python application designed for the management of CSV re
 ### Console-Based Menu
 Navigate through the application's functionalities with ease using the interactive command-line interface.
 
-### CRUD Operations
+### Persistent Storage Operations
 Create, Read, Update, and Delete capabilities for managing Yellowtail fish record entries.
 
 ### CSV File Integration
